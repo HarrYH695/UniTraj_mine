@@ -1,9 +1,20 @@
-wandb
-torch
-pytorch-lightning
-hydra-core
-scikit-learn
-einops
-easydict
-panda3d-simplepbr==0.10
-h5py
+# wandb
+# torch
+# pytorch-lightning
+# hydra-core
+# scikit-learn
+# einops
+# easydict
+# panda3d-simplepbr==0.10
+# h5py
+
+pytorch-lightning==2.3.3
+hydra-core==1.3.2
+omegaconf==2.3.0
+wandb==0.16.6
+scikit-learn==1.4.2
+scipy==1.11.4
+numpy==1.26.4
+einops==0.7.0
+easydict==1.10
+h5py==3.10.0

@@ -3,3 +3,5 @@
 /unitraj/outputs/
 /unitraj/tmp
 .DS_Store
+
+__pycache__
