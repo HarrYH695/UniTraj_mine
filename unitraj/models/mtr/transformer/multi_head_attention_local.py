@@ -16,7 +16,7 @@ from torch.nn.init import constant_
 from torch.nn.init import xavier_uniform_
 from torch.nn.parameter import Parameter
 
-from unitraj.models.mtr.ops import attention
+from models.mtr.ops import attention
 
 
 class MultiheadAttentionLocal(nn.Module):

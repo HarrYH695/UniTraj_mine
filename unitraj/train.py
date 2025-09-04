@@ -62,7 +62,7 @@ def train(cfg):
     # automatically resume training
     if cfg.ckpt_path is None and not cfg.debug:
         # Pattern to match all .ckpt files in the base_path recursively
-        search_pattern = os.path.join('./unitraj', cfg.exp_name, '**', '*.ckpt')
+        search_pattern = os.path.join('/nfs/turbo/coe-mcity/hanhy/UniTraj_Res/MTR/', cfg.exp_name, '**', '*.ckpt')
         cfg.ckpt_path = find_latest_checkpoint(search_pattern)
 
     trainer.fit(model=model, train_dataloaders=train_loader, val_dataloaders=val_loader, ckpt_path=cfg.ckpt_path)

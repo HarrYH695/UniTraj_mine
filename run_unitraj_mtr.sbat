@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH --job-name=pretrain_mtr
+#SBATCH --account=mcity_project
+#SBATCH --partition=mcity_project
+#SBATCH --time=7-00:00:00
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=5
+#SBATCH --tasks-per-node=6
+#SBATCH --gpus-per-node=h100:6
+#SBATCH --mem=128GB
+#SBATCH --mail-type=FAIL 
+#SBATCH --output=%x-%j.log
+source /sw/pkgs/arc/python3.10-anaconda/2023.03/etc/profile.d/conda.sh
+conda activate unitraj 
+cd /home/boqili/scratch/UniTraj
+
+# Set environment variables for parallel processing
+# export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+# export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+srun --cpu-bind=cores python ./unitraj/train.py

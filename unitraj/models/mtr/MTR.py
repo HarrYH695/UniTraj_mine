@@ -12,12 +12,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 from easydict import EasyDict
 
-import unitraj.models.mtr.loss_utils as loss_utils
-import unitraj.models.mtr.motion_utils as motion_utils
-from unitraj.models.base_model.base_model import BaseModel
-from unitraj.models.mtr.MTR_utils import PointNetPolylineEncoder, get_batch_offsets, build_mlps
-from unitraj.models.mtr.ops.knn import knn_utils
-from unitraj.models.mtr.transformer import transformer_decoder_layer, position_encoding_utils, \
+import models.mtr.loss_utils as loss_utils
+import models.mtr.motion_utils as motion_utils
+from models.base_model.base_model import BaseModel
+from models.mtr.MTR_utils import PointNetPolylineEncoder, get_batch_offsets, build_mlps
+from models.mtr.ops.knn import knn_utils
+from models.mtr.transformer import transformer_decoder_layer, position_encoding_utils, \
     transformer_encoder_layer
 
 Type_dict = {0: 'UNSET', 1: 'VEHICLE', 2: 'PEDESTRIAN', 3: 'CYCLIST'}

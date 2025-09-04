@@ -1,0 +1,722 @@
+2025-09-03 15:40:55,637 INFO    StreamThr :3884992 [internal.py:wandb_internal():86] W&B internal server running at pid: 3884992, started at: 2025-09-03 15:40:55.635780
+2025-09-03 15:40:55,638 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status
+2025-09-03 15:40:55,641 INFO    WriterThread:3884992 [datastore.py:open_for_write():87] open: ./wandb/run-20250903_154055-nnojexs3/run-nnojexs3.wandb
+2025-09-03 15:40:55,643 DEBUG   SenderThread:3884992 [sender.py:send():379] send: header
+2025-09-03 15:40:55,686 DEBUG   SenderThread:3884992 [sender.py:send():379] send: run
+2025-09-03 15:40:55,690 INFO    SenderThread:3884992 [sender.py:_setup_resume():749] checking resume status for None/unitraj/nnojexs3
+2025-09-03 15:40:56,097 INFO    SenderThread:3884992 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20250903_154055-nnojexs3/files
+2025-09-03 15:40:56,097 INFO    SenderThread:3884992 [sender.py:_start_run_threads():1124] run started: nnojexs3 with start time 1756928455.638983
+2025-09-03 15:40:56,118 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: check_version
+2025-09-03 15:40:56,118 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: check_version
+2025-09-03 15:40:56,231 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: run_start
+2025-09-03 15:40:56,252 DEBUG   HandlerThread:3884992 [system_info.py:__init__():26] System info init
+2025-09-03 15:40:56,252 DEBUG   HandlerThread:3884992 [system_info.py:__init__():41] System info init done
+2025-09-03 15:40:56,252 INFO    HandlerThread:3884992 [system_monitor.py:start():194] Starting system monitor
+2025-09-03 15:40:56,252 INFO    SystemMonitor:3884992 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-09-03 15:40:56,252 INFO    HandlerThread:3884992 [system_monitor.py:probe():214] Collecting system info
+2025-09-03 15:40:56,253 INFO    SystemMonitor:3884992 [interfaces.py:start():190] Started cpu monitoring
+2025-09-03 15:40:56,254 INFO    SystemMonitor:3884992 [interfaces.py:start():190] Started disk monitoring
+2025-09-03 15:40:56,255 INFO    SystemMonitor:3884992 [interfaces.py:start():190] Started gpu monitoring
+2025-09-03 15:40:56,256 INFO    SystemMonitor:3884992 [interfaces.py:start():190] Started memory monitoring
+2025-09-03 15:40:56,256 INFO    SystemMonitor:3884992 [interfaces.py:start():190] Started network monitoring
+2025-09-03 15:40:56,271 DEBUG   HandlerThread:3884992 [system_info.py:probe():150] Probing system
+2025-09-03 15:40:56,271 DEBUG   HandlerThread:3884992 [system_info.py:_probe_git():135] Probing git
+2025-09-03 15:40:56,292 DEBUG   HandlerThread:3884992 [system_info.py:_probe_git():143] Probing git done
+2025-09-03 15:40:56,292 DEBUG   HandlerThread:3884992 [system_info.py:probe():198] Probing system done
+2025-09-03 15:40:56,292 DEBUG   HandlerThread:3884992 [system_monitor.py:probe():223] {'os': 'Linux-4.18.0-553.50.1.el8_10.x86_64-x86_64-with-glibc2.28', 'python': '3.9.23', 'heartbeatAt': '2025-09-03T19:40:56.271095', 'startedAt': '2025-09-03T19:40:55.612333', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/hanhy/ondemand/data/sys/myjobs/UniTraj_mine/unitraj/evaluation.py', 'codePathLocal': 'evaluation.py', 'codePath': 'unitraj/evaluation.py', 'git': {'remote': 'https://github.com/HarrYH695/UniTraj_mine.git', 'commit': '144689a9fe8d3444c3bcbdf9c028a8ba80e5b175'}, 'email': 'harryandreshan@gmail.com', 'root': '/home/hanhy/ondemand/data/sys/myjobs/UniTraj_mine', 'host': 'lh1400.arc-ts.umich.edu', 'username': 'hanhy', 'executable': '/home/hanhy/.conda/envs/ut0/bin/python', 'cpu_count': 64, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3398.4375, 'min': 3400.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3300.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3400.0, 'min': 3400.0, 'max': 3400.0}], 'disk': {'/': {'total': 19.990234375, 'used': 10.913684844970703}}, 'gpu': 'NVIDIA L40S', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA L40S', 'memory_total': 48305799168}, {'name': 'NVIDIA L40S', 'memory_total': 48305799168}], 'memory': {'total': 1007.036735534668}}
+2025-09-03 15:40:56,292 INFO    HandlerThread:3884992 [system_monitor.py:probe():224] Finished collecting system info
+2025-09-03 15:40:56,292 INFO    HandlerThread:3884992 [system_monitor.py:probe():227] Publishing system info
+2025-09-03 15:40:56,292 DEBUG   HandlerThread:3884992 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2025-09-03 15:40:57,099 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20250903_154055-nnojexs3/files/conda-environment.yaml
+2025-09-03 15:40:59,866 DEBUG   HandlerThread:3884992 [system_info.py:_save_conda():222] Saving conda packages done
+2025-09-03 15:40:59,869 INFO    HandlerThread:3884992 [system_monitor.py:probe():229] Finished publishing system info
+2025-09-03 15:40:59,879 DEBUG   SenderThread:3884992 [sender.py:send():379] send: files
+2025-09-03 15:40:59,879 INFO    SenderThread:3884992 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2025-09-03 15:41:00,074 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: python_packages
+2025-09-03 15:41:00,074 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: python_packages
+2025-09-03 15:41:00,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:41:00,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:41:00,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:41:00,100 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/conda-environment.yaml
+2025-09-03 15:41:00,101 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20250903_154055-nnojexs3/files/requirements.txt
+2025-09-03 15:41:00,101 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20250903_154055-nnojexs3/files/wandb-metadata.json
+2025-09-03 15:41:00,195 INFO    wandb-upload_0:3884992 [upload_job.py:push():131] Uploaded file /tmp/tmpaowyn6y1wandb/opvtgb9q-wandb-metadata.json
+2025-09-03 15:41:00,246 DEBUG   SenderThread:3884992 [sender.py:send():379] send: telemetry
+2025-09-03 15:41:00,246 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:41:00,247 DEBUG   SenderThread:3884992 [sender.py:send():379] send: telemetry
+2025-09-03 15:41:00,247 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:41:00,247 WARNING SenderThread:3884992 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2025-09-03 15:41:01,101 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:01,250 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:03,102 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:05,104 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:06,105 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:06,445 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:11,446 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:15,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:41:15,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:41:15,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:41:17,159 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:18,113 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:19,114 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:22,117 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:22,590 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:24,118 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:26,119 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:28,120 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:28,233 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:29,120 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/config.yaml
+2025-09-03 15:41:30,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:41:30,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:41:30,075 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:41:30,121 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:32,122 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:33,428 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:34,123 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:36,124 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:38,126 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:39,057 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:40,127 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:42,128 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:44,129 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:44,280 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:45,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:41:45,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:41:45,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:41:46,131 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:48,132 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:49,912 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:50,133 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:52,134 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:54,135 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:55,145 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:41:56,137 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:41:56,257 DEBUG   SystemMonitor:3884992 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-09-03 15:41:56,258 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:41:58,138 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:00,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:42:00,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:42:00,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:42:00,139 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:00,152 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:02,140 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:04,141 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:05,500 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:06,143 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:08,144 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:10,145 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:10,689 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:12,146 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:14,147 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:15,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:42:15,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:42:15,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:42:16,148 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:16,356 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:18,150 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:20,151 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:21,555 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:22,152 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:24,153 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:26,155 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:26,259 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:42:27,259 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:28,156 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:30,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:42:30,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:42:30,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:42:30,157 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:32,158 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:32,324 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:34,160 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:36,161 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:37,938 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:38,162 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:40,164 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:42,165 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:43,082 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:44,166 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:45,075 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:42:45,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:42:45,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:42:46,167 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:48,169 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:48,680 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:50,170 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:52,172 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:53,825 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:42:54,173 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:56,174 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:56,260 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:42:58,175 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:42:59,429 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:00,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:43:00,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:43:00,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:43:00,176 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:02,178 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:04,179 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:04,585 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:06,180 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:08,182 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:10,183 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:10,219 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:12,184 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:14,185 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:15,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:43:15,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:43:15,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:43:15,396 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:16,187 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:18,188 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:20,189 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:21,031 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:22,191 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:24,192 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:26,193 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:26,207 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:26,262 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:43:28,194 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:30,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:43:30,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:43:30,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:43:30,195 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:31,837 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:32,197 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:34,199 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:36,200 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:37,005 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:38,201 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:40,202 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:42,204 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:42,670 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:44,205 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:45,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:43:45,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:43:45,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:43:46,206 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:47,902 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:48,208 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:50,209 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:52,210 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:53,569 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:43:54,211 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:56,213 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:56,261 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:43:58,214 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:43:58,751 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:00,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:44:00,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:44:00,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:44:00,215 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:02,216 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:04,217 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:04,389 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:06,218 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:08,220 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:09,567 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:10,221 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:12,222 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:14,223 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:15,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:44:15,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:44:15,076 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:44:15,140 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:16,224 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:18,225 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:20,226 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:20,390 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:22,228 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:24,229 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:26,032 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:26,230 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:26,262 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:44:28,232 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:30,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:44:30,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:44:30,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:44:30,233 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:31,335 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:32,234 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:34,236 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:36,237 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:36,875 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:38,238 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:40,239 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:42,089 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:42,241 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:44,242 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:45,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:44:45,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:44:45,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:44:46,243 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:47,768 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:48,244 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:50,245 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:52,247 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:53,005 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:44:54,248 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:56,249 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:56,263 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:44:58,250 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:44:58,685 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:00,076 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:45:00,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:45:00,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:45:00,251 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:02,252 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:03,930 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:04,253 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:06,255 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:08,256 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:09,607 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:10,257 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:12,258 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:14,259 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:14,847 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:15,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:45:15,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:45:15,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:45:16,260 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:18,262 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:20,263 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:20,535 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:22,265 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:24,266 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:25,773 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:26,265 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:45:26,267 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:28,268 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:30,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:45:30,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:45:30,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:45:30,269 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:31,435 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:32,270 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:34,272 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:36,274 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:36,628 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:38,275 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:40,276 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:42,277 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:42,278 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:44,278 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:45,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:45:45,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:45:45,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:45:46,280 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:47,486 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:48,281 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:50,282 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:52,283 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:53,172 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:45:54,284 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:56,265 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:45:56,285 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:58,287 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:45:58,372 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:00,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:46:00,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:46:00,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:46:00,288 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:02,289 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:04,013 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:04,290 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:06,291 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:08,292 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:09,210 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:10,293 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:12,295 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:14,296 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:14,862 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:15,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:46:15,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:46:15,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:46:16,297 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:18,298 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:20,055 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:20,300 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:22,301 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:24,302 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:25,704 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:26,265 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:46:26,304 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:28,305 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:30,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:46:30,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:46:30,077 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:46:30,306 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:30,898 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:32,307 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:34,309 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:36,310 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:36,539 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:38,312 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:40,313 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:41,738 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:42,314 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:44,316 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:45,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:46:45,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:46:45,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:46:46,317 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:47,371 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:48,318 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:50,319 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:52,320 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:52,568 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:54,322 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:56,266 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:46:56,323 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:46:58,212 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:46:58,324 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:00,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:47:00,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:47:00,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:47:00,325 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:02,326 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:03,400 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:04,328 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:06,329 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:08,330 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:09,045 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:10,331 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:12,333 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:14,271 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:14,334 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:15,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:47:15,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:47:15,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:47:16,336 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:18,337 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:19,949 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:20,339 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:22,340 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:24,341 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:25,181 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:26,267 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:47:26,343 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:28,344 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:30,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:47:30,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:47:30,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:47:30,345 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:33,043 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:34,349 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:36,350 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:38,351 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:38,662 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:40,353 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:42,354 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:43,899 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:44,355 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:45,077 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:47:45,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:47:45,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:47:46,357 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:48,358 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:49,589 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:50,359 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:52,360 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:54,361 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:54,827 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:47:56,268 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:47:56,363 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:47:58,364 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:00,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:48:00,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:48:00,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:48:00,180 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:00,365 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:02,366 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:04,368 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:05,191 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:06,369 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:08,370 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:10,371 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:10,416 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:12,373 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:14,374 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:15,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:48:15,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:48:15,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:48:16,174 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:16,375 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:18,376 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:20,378 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:21,315 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:22,379 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:24,380 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:26,268 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:48:26,381 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:27,269 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:28,383 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:30,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:48:30,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:48:30,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:48:30,384 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:32,385 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:33,228 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:34,387 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:36,389 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:38,390 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:38,464 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:40,391 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:42,393 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:44,137 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:44,394 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:45,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:48:45,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:48:45,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:48:46,395 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:48,397 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:49,369 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:50,398 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:52,399 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:54,400 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:55,039 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:48:56,269 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:48:56,401 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:48:58,402 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:00,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:49:00,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:49:00,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:49:00,243 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:00,403 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:02,405 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:04,406 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:05,942 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:06,407 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:08,408 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:10,409 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:11,183 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:12,411 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:14,412 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:15,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:49:15,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:49:15,079 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:49:16,413 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:16,855 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:18,414 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:20,415 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:22,020 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:22,417 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:24,418 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:26,270 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:49:26,419 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:27,583 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:28,420 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:30,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: stop_status
+2025-09-03 15:49:30,078 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: stop_status
+2025-09-03 15:49:30,078 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:49:30,421 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:32,422 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:32,674 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:34,424 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:36,425 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:36,667 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: partial_history
+2025-09-03 15:49:36,673 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,673 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,674 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,674 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,674 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,675 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,675 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,676 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,676 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,676 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,676 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,677 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,677 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,677 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,678 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,678 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,679 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,679 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,679 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,679 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,680 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,680 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,680 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,680 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,681 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,681 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,682 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,682 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,682 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,682 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,683 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,683 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,684 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,684 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,684 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,685 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,686 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,686 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,686 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,687 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,687 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,688 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,688 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,688 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,688 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,689 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,689 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,689 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,689 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,690 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,690 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,691 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,691 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,691 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,691 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,692 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,692 DEBUG   SenderThread:3884992 [sender.py:send():379] send: metric
+2025-09-03 15:49:36,692 DEBUG   SenderThread:3884992 [sender.py:send():379] send: history
+2025-09-03 15:49:36,693 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: summary_record
+2025-09-03 15:49:36,696 INFO    SenderThread:3884992 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-09-03 15:49:37,387 DEBUG   SenderThread:3884992 [sender.py:send():379] send: exit
+2025-09-03 15:49:37,387 INFO    SenderThread:3884992 [sender.py:send_exit():586] handling exit code: 0
+2025-09-03 15:49:37,388 INFO    SenderThread:3884992 [sender.py:send_exit():588] handling runtime: 521
+2025-09-03 15:49:37,392 INFO    SenderThread:3884992 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-09-03 15:49:37,392 INFO    SenderThread:3884992 [sender.py:send_exit():594] send defer
+2025-09-03 15:49:37,392 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,393 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 0
+2025-09-03 15:49:37,393 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,394 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 0
+2025-09-03 15:49:37,394 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 1
+2025-09-03 15:49:37,394 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,395 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 1
+2025-09-03 15:49:37,395 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,395 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 1
+2025-09-03 15:49:37,395 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 2
+2025-09-03 15:49:37,396 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,397 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 2
+2025-09-03 15:49:37,397 INFO    HandlerThread:3884992 [system_monitor.py:finish():203] Stopping system monitor
+2025-09-03 15:49:37,397 DEBUG   SystemMonitor:3884992 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-09-03 15:49:37,397 INFO    HandlerThread:3884992 [interfaces.py:finish():202] Joined cpu monitor
+2025-09-03 15:49:37,397 DEBUG   SystemMonitor:3884992 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-09-03 15:49:37,397 INFO    HandlerThread:3884992 [interfaces.py:finish():202] Joined disk monitor
+2025-09-03 15:49:37,426 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20250903_154055-nnojexs3/files/wandb-summary.json
+2025-09-03 15:49:37,526 INFO    HandlerThread:3884992 [interfaces.py:finish():202] Joined gpu monitor
+2025-09-03 15:49:37,526 INFO    HandlerThread:3884992 [interfaces.py:finish():202] Joined memory monitor
+2025-09-03 15:49:37,527 INFO    HandlerThread:3884992 [interfaces.py:finish():202] Joined network monitor
+2025-09-03 15:49:37,528 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,528 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 2
+2025-09-03 15:49:37,528 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 3
+2025-09-03 15:49:37,528 DEBUG   SenderThread:3884992 [sender.py:send():379] send: stats
+2025-09-03 15:49:37,528 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,529 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 3
+2025-09-03 15:49:37,529 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,530 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 3
+2025-09-03 15:49:37,530 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 4
+2025-09-03 15:49:37,531 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,531 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 4
+2025-09-03 15:49:37,531 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,532 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 4
+2025-09-03 15:49:37,532 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 5
+2025-09-03 15:49:37,533 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,533 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 5
+2025-09-03 15:49:37,533 DEBUG   SenderThread:3884992 [sender.py:send():379] send: summary
+2025-09-03 15:49:37,536 INFO    SenderThread:3884992 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2025-09-03 15:49:37,537 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,537 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 5
+2025-09-03 15:49:37,537 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 6
+2025-09-03 15:49:37,537 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,538 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 6
+2025-09-03 15:49:37,538 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,538 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 6
+2025-09-03 15:49:37,541 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: status_report
+2025-09-03 15:49:37,661 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 7
+2025-09-03 15:49:37,661 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:37,662 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 7
+2025-09-03 15:49:37,662 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:37,662 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 7
+2025-09-03 15:49:38,387 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: poll_exit
+2025-09-03 15:49:38,427 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:38,427 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/wandb-summary.json
+2025-09-03 15:49:38,428 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/config.yaml
+2025-09-03 15:49:39,428 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:40,168 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 8
+2025-09-03 15:49:40,168 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: poll_exit
+2025-09-03 15:49:40,168 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:40,169 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 8
+2025-09-03 15:49:40,169 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:40,170 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 8
+2025-09-03 15:49:40,170 INFO    SenderThread:3884992 [job_builder.py:build():318] Attempting to build job artifact
+2025-09-03 15:49:40,172 INFO    SenderThread:3884992 [job_builder.py:_get_source_type():455] is repo sourced job
+2025-09-03 15:49:40,246 INFO    SenderThread:3884992 [job_builder.py:build():431] adding wandb-job metadata file
+2025-09-03 15:49:40,259 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 9
+2025-09-03 15:49:40,259 DEBUG   SenderThread:3884992 [sender.py:send():379] send: artifact
+2025-09-03 15:49:40,259 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:40,262 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 9
+2025-09-03 15:49:40,388 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: poll_exit
+2025-09-03 15:49:40,428 INFO    Thread-12 :3884992 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:40,848 INFO    wandb-upload_1:3884992 [upload_job.py:push():86] Skipped uploading /home/hanhy/.local/share/wandb/artifacts/staging/tmp1fcxe5z2
+2025-09-03 15:49:40,988 INFO    wandb-upload_0:3884992 [upload_job.py:push():89] Uploaded file /tmp/tmp69a8egs0/wandb-job.json
+2025-09-03 15:49:41,590 INFO    SenderThread:3884992 [sender.py:send_artifact():1468] sent artifact job-https___github.com_HarrYH695_UniTraj_mine.git_unitraj_evaluation.py - {'id': 'QXJ0aWZhY3Q6MjAxMjUxMDA0Mw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjczMTU4MjY1NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MjAxMjMzMDc4Ng==', 'versionIndex': 0}}}
+2025-09-03 15:49:41,590 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:41,590 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 9
+2025-09-03 15:49:41,591 INFO    SenderThread:3884992 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-09-03 15:49:42,429 INFO    SenderThread:3884992 [dir_watcher.py:finish():388] scan: ./wandb/run-20250903_154055-nnojexs3/files
+2025-09-03 15:49:42,429 INFO    SenderThread:3884992 [dir_watcher.py:finish():402] scan save: ./wandb/run-20250903_154055-nnojexs3/files/conda-environment.yaml conda-environment.yaml
+2025-09-03 15:49:42,429 INFO    SenderThread:3884992 [dir_watcher.py:finish():402] scan save: ./wandb/run-20250903_154055-nnojexs3/files/config.yaml config.yaml
+2025-09-03 15:49:42,429 INFO    SenderThread:3884992 [dir_watcher.py:finish():402] scan save: ./wandb/run-20250903_154055-nnojexs3/files/wandb-metadata.json wandb-metadata.json
+2025-09-03 15:49:42,430 INFO    SenderThread:3884992 [dir_watcher.py:finish():402] scan save: ./wandb/run-20250903_154055-nnojexs3/files/requirements.txt requirements.txt
+2025-09-03 15:49:42,430 INFO    SenderThread:3884992 [dir_watcher.py:finish():402] scan save: ./wandb/run-20250903_154055-nnojexs3/files/output.log output.log
+2025-09-03 15:49:42,430 INFO    SenderThread:3884992 [dir_watcher.py:finish():402] scan save: ./wandb/run-20250903_154055-nnojexs3/files/wandb-summary.json wandb-summary.json
+2025-09-03 15:49:42,437 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 10
+2025-09-03 15:49:42,438 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: poll_exit
+2025-09-03 15:49:42,438 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:42,440 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 10
+2025-09-03 15:49:42,441 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:42,441 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 10
+2025-09-03 15:49:42,441 INFO    SenderThread:3884992 [file_pusher.py:finish():172] shutting down file pusher
+2025-09-03 15:49:42,634 INFO    wandb-upload_1:3884992 [upload_job.py:push():131] Uploaded file ./wandb/run-20250903_154055-nnojexs3/files/config.yaml
+2025-09-03 15:49:42,741 INFO    wandb-upload_3:3884992 [upload_job.py:push():131] Uploaded file ./wandb/run-20250903_154055-nnojexs3/files/requirements.txt
+2025-09-03 15:49:42,747 INFO    wandb-upload_2:3884992 [upload_job.py:push():131] Uploaded file ./wandb/run-20250903_154055-nnojexs3/files/conda-environment.yaml
+2025-09-03 15:49:42,750 INFO    wandb-upload_4:3884992 [upload_job.py:push():131] Uploaded file ./wandb/run-20250903_154055-nnojexs3/files/wandb-summary.json
+2025-09-03 15:49:42,789 INFO    wandb-upload_0:3884992 [upload_job.py:push():131] Uploaded file ./wandb/run-20250903_154055-nnojexs3/files/output.log
+2025-09-03 15:49:42,990 INFO    Thread-11 :3884992 [sender.py:transition_state():614] send defer: 11
+2025-09-03 15:49:42,990 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:42,990 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 11
+2025-09-03 15:49:42,991 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:42,991 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 11
+2025-09-03 15:49:42,991 INFO    SenderThread:3884992 [file_pusher.py:join():178] waiting for file pusher
+2025-09-03 15:49:42,992 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 12
+2025-09-03 15:49:42,993 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:42,993 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 12
+2025-09-03 15:49:42,993 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:42,994 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 12
+2025-09-03 15:49:42,994 INFO    SenderThread:3884992 [file_stream.py:finish():614] file stream finish called
+2025-09-03 15:49:43,304 INFO    SenderThread:3884992 [file_stream.py:finish():618] file stream finish is done
+2025-09-03 15:49:43,304 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 13
+2025-09-03 15:49:43,304 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:43,304 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 13
+2025-09-03 15:49:43,305 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:43,305 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 13
+2025-09-03 15:49:43,305 INFO    SenderThread:3884992 [sender.py:transition_state():614] send defer: 14
+2025-09-03 15:49:43,306 DEBUG   SenderThread:3884992 [sender.py:send():379] send: final
+2025-09-03 15:49:43,306 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: defer
+2025-09-03 15:49:43,306 DEBUG   SenderThread:3884992 [sender.py:send():379] send: footer
+2025-09-03 15:49:43,307 INFO    HandlerThread:3884992 [handler.py:handle_request_defer():172] handle defer: 14
+2025-09-03 15:49:43,308 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: defer
+2025-09-03 15:49:43,308 INFO    SenderThread:3884992 [sender.py:send_request_defer():610] handle sender defer: 14
+2025-09-03 15:49:43,308 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: poll_exit
+2025-09-03 15:49:43,309 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: poll_exit
+2025-09-03 15:49:43,309 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: server_info
+2025-09-03 15:49:43,309 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: poll_exit
+2025-09-03 15:49:43,310 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: get_summary
+2025-09-03 15:49:43,310 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: poll_exit
+2025-09-03 15:49:43,311 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: sampled_history
+2025-09-03 15:49:43,312 DEBUG   SenderThread:3884992 [sender.py:send_request():406] send_request: server_info
+2025-09-03 15:49:43,313 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: internal_messages
+2025-09-03 15:49:43,398 INFO    MainThread:3884992 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2025-09-03 15:49:43,399 INFO    MainThread:3884992 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2025-09-03 15:49:43,400 INFO    MainThread:3884992 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2025-09-03 15:49:43,400 DEBUG   HandlerThread:3884992 [handler.py:handle_request():146] handle_request: shutdown
+2025-09-03 15:49:43,401 INFO    HandlerThread:3884992 [handler.py:finish():866] shutting down handler
+2025-09-03 15:49:44,310 INFO    WriterThread:3884992 [datastore.py:close():296] close: ./wandb/run-20250903_154055-nnojexs3/run-nnojexs3.wandb
+2025-09-03 15:49:44,398 INFO    SenderThread:3884992 [sender.py:finish():1546] shutting down sender
+2025-09-03 15:49:44,399 INFO    SenderThread:3884992 [file_pusher.py:finish():172] shutting down file pusher
+2025-09-03 15:49:44,399 INFO    SenderThread:3884992 [file_pusher.py:join():178] waiting for file pusher

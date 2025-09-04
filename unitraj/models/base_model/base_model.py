@@ -5,8 +5,8 @@ import pytorch_lightning as pl
 import torch
 import wandb
 
-import unitraj.datasets.common_utils as common_utils
-import unitraj.utils.visualization as visualization
+import datasets.common_utils as common_utils
+import utils.visualization as visualization
 
 
 class BaseModel(pl.LightningModule):

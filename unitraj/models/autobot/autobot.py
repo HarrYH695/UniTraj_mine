@@ -9,7 +9,7 @@ from torch import optim
 from torch.distributions import MultivariateNormal, Laplace
 from torch.optim.lr_scheduler import MultiStepLR
 
-from unitraj.models.base_model.base_model import BaseModel
+from models.base_model.base_model import BaseModel
 
 
 class MapEncoderCNN(nn.Module):

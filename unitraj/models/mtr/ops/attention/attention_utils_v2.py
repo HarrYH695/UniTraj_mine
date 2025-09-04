@@ -6,7 +6,7 @@ import torch
 from torch.autograd import Function, Variable
 
 try:
-    from unitraj.models.mtr.ops.attention import attention_cuda
+    from models.mtr.ops.attention import attention_cuda
 except ImportError:
     try:
         from attention import attention_cuda

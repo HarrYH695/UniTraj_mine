@@ -11,11 +11,11 @@ from scenarionet.common_utils import read_scenario, read_dataset_summary
 from torch.utils.data import Dataset
 from tqdm import tqdm
 
-from unitraj.datasets import common_utils
-from unitraj.datasets.common_utils import get_polyline_dir, find_true_segments, generate_mask, is_ddp, \
+from datasets import common_utils
+from datasets.common_utils import get_polyline_dir, find_true_segments, generate_mask, is_ddp, \
     get_kalman_difficulty, get_trajectory_type, interpolate_polyline
-from unitraj.datasets.types import object_type, polyline_type
-from unitraj.utils.visualization import check_loaded_data
+from datasets.types import object_type, polyline_type
+from utils.visualization import check_loaded_data
 from functools import lru_cache
 
 default_value = 0
@@ -62,16 +62,16 @@ class BaseDataset(Dataset):
                     if os.path.exists(self.cache_path):
                         shutil.rmtree(self.cache_path)
                     os.makedirs(self.cache_path, exist_ok=True)
-                    process_num = os.cpu_count()//2
+                    process_num = min(os.cpu_count()//2, 4)
                     print('Using {} processes to load data...'.format(process_num))
 
                     data_splits = np.array_split(summary_list, process_num)
 
                     data_splits = [(data_path, mapping, list(data_splits[i]), dataset_name) for i in range(process_num)]
                     # save the data_splits in a tmp directory
-                    os.makedirs('tmp', exist_ok=True)
+                    os.makedirs('/scratch/mcity_project_root/mcity_project/hanhy/Waymo_datasets/WOMD_v1_3/unitraj_use/tmp', exist_ok=True)
                     for i in range(process_num):
-                        with open(os.path.join('tmp', '{}.pkl'.format(i)), 'wb') as f:
+                        with open(os.path.join('/scratch/mcity_project_root/mcity_project/hanhy/Waymo_datasets/WOMD_v1_3/unitraj_use/tmp', '{}.pkl'.format(i)), 'wb') as f:
                             pickle.dump(data_splits[i], f)
 
                     # results = self.process_data_chunk(0)
@@ -107,7 +107,7 @@ class BaseDataset(Dataset):
         print('Data loaded')
 
     def process_data_chunk(self, worker_index):
-        with open(os.path.join('tmp', '{}.pkl'.format(worker_index)), 'rb') as f:
+        with open(os.path.join('/scratch/mcity_project_root/mcity_project/hanhy/Waymo_datasets/WOMD_v1_3/unitraj_use/tmp', '{}.pkl'.format(worker_index)), 'rb') as f:
             data_chunk = pickle.load(f)
         file_list = {}
         data_path, mapping, data_list, dataset_name = data_chunk
